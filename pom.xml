@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+<!--    <packaging>pom</packaging>-->
+
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>aliyun</module>
+        <module>commdomain</module>
+        <module>commonservice</module>
+        <module>core</module>
+        <module>front</module>
+        <module>rtc</module>
+        <module>hwyun</module>
+        <module>wx</module>
+        <module>aftersale</module>
+
+
+    </modules>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.4.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+
+
+    <groupId>com.wiser</groupId>
+    <artifactId>wiser-cloud</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>wiser-cloud</name>
+    <description>Project Level 1</description>
+
+
+
+    <properties>
+        <java.version>1.8</java.version>
+        <druid.version>1.1.18</druid.version>
+        <hutool.version>5.1.0</hutool.version>
+        <jwt.version>3.8.0</jwt.version>
+        <gson.version>2.8.5</gson.version>
+        <apache.poi.version>4.1.1</apache.poi.version>
+        <shiro.spring.boot.starter>1.4.0</shiro.spring.boot.starter>
+        <swagger2.version>2.6.1</swagger2.version>
+        <lombok.verison>1.18.6</lombok.verison>
+        <aliyun.core>4.1.0</aliyun.core>
+        <poi-ooxml>3.17</poi-ooxml>
+        <zxing.version>3.3.3</zxing.version>
+        <wx.binarywang>3.6.0</wx.binarywang>
+
+
+    </properties>
+
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-integration</artifactId>
+        </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>mysql</groupId>-->
+<!--            <artifactId>mysql-connector-java</artifactId>-->
+<!--            <scope>runtime</scope>-->
+<!--        </dependency>-->
+
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>${druid.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>${hutool.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>${jwt.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>${gson.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>${apache.poi.version}</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.apache.shiro/shiro-spring-boot-web-starter -->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring-boot-web-starter</artifactId>
+            <version>${shiro.spring.boot.starter}</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.3</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger2.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger2.version}</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.verison}</version>
+            <scope>provided</scope>
+        </dependency>
+
+
+
+<!--        <dependency>-->
+<!--            <groupId>com.youzan.cloud</groupId>-->
+<!--            <artifactId>open-sdk-core</artifactId>-->
+<!--            <version>1.0.5-RELEASE</version>-->
+<!--        </dependency>-->
+
+<!--        <dependency>-->
+<!--            <groupId>com.youzan.cloud</groupId>-->
+<!--            <artifactId>open-sdk-gen</artifactId>-->
+<!--            <version>1.0.5.201909162007-RELEASE</version>-->
+<!--        </dependency>-->
+
+
+
+<!--        阿里云相关-->
+
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>aliyun-java-sdk-core</artifactId>
+            <version>${aliyun.core}</version>
+        </dependency>
+
+<!--        导入excel相关-->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>${poi-ooxml}</version>
+        </dependency>
+
+
+        <!--生成二维码-->
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>core</artifactId>
+            <version>${zxing.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>javase</artifactId>
+            <version>${zxing.version}</version>
+        </dependency>
+
+
+<!--        微信依赖-->
+<!--        公众号-->
+        <dependency>
+            <groupId>com.github.binarywang</groupId>
+            <artifactId>wx-java-mp-spring-boot-starter</artifactId>
+            <version>${wx.binarywang}</version>
+        </dependency>
+
+<!--        微信支付-->
+        <dependency>
+            <groupId>com.github.binarywang</groupId>
+            <artifactId>wx-java-pay-spring-boot-starter</artifactId>
+            <version>${wx.binarywang}</version>
+        </dependency>
+
+
+<!--            小程序-->
+            <dependency>
+                <groupId>com.github.binarywang</groupId>
+                <artifactId>wx-java-miniapp-spring-boot-starter</artifactId>
+                <version>${wx.binarywang}</version>
+            </dependency>
+
+
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.9</version>
+        </dependency>
+
+
+
+
+
+    </dependencies>
+
+
+
+    <repositories>
+    </repositories>
+
+
+
+<build>
+    <plugins>
+
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+                <source>${java.version}</source>
+                <target>${java.version}</target>
+<!--                <compilerArgs>-->
+<!--                <arg>-extdirs</arg>-->
+<!--                <arg>${project.basedir}/lib</arg>-->
+<!--                </compilerArgs>-->
+<!--                <executable>true</executable>-->
+<!--                <includeSystemScope>true</includeSystemScope>-->
+            </configuration>
+        </plugin>
+
+
+
+        <!-- 可执行jar插件 -->
+<!--        <plugin>-->
+<!--            <groupId>org.apache.maven.plugins</groupId>-->
+<!--            <artifactId>maven-jar-plugin</artifactId>-->
+<!--            <configuration>-->
+<!--&lt;!&ndash;                <outputDirectory>${project.build.directory}/java</outputDirectory>&ndash;&gt;-->
+<!--                <archive>-->
+<!--                    <manifest>-->
+<!--                        <addClasspath>true</addClasspath>-->
+<!--                        <classpathPrefix>lib/</classpathPrefix>-->
+<!--                        <mainClass>com.wenc.front.FrontApplication</mainClass>-->
+<!--                    </manifest>-->
+<!--                    <manifestEntries>-->
+<!--                        <Class-Path>.</Class-Path>-->
+<!--                    </manifestEntries>-->
+<!--                </archive>-->
+<!--            </configuration>-->
+<!--        </plugin>-->
+<!--        &lt;!&ndash; 依赖包插件 &ndash;&gt;-->
+<!--        <plugin>-->
+<!--            <groupId>org.apache.maven.plugins</groupId>-->
+<!--            <artifactId>maven-dependency-plugin</artifactId>-->
+<!--            <executions>-->
+<!--                <execution>-->
+<!--                    <id>copy-dependencies</id>-->
+<!--                    <phase>package</phase>-->
+<!--                    <goals>-->
+<!--                        <goal>copy-dependencies</goal>-->
+<!--                    </goals>-->
+<!--                    <configuration>-->
+<!--                        <outputDirectory>${project.build.directory}/java/lib</outputDirectory>-->
+<!--                        &lt;!&ndash; 是否不包含间接依赖 &ndash;&gt;-->
+<!--                        <excludeTransitive>false</excludeTransitive>-->
+<!--                        &lt;!&ndash; 忽略版本 &ndash;&gt;-->
+<!--                        <stripVersion>false</stripVersion>-->
+<!--                    </configuration>-->
+<!--                </execution>-->
+<!--            </executions>-->
+<!--        </plugin>-->
+
+
+
+
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <configuration>
+                <skipTests>true</skipTests>
+                <testFailureIgnore>true</testFailureIgnore>
+            </configuration>
+        </plugin>
+    </plugins>
+
+<!--    <resources>-->
+<!--        <resource>-->
+<!--            <directory>lib</directory>-->
+<!--            <targetPath>${pom.basedir}/lib/</targetPath>-->
+<!--            <includes>-->
+<!--                <include>**/*.jar</include>-->
+<!--            </includes>-->
+<!--        </resource>-->
+<!--    </resources>-->
+
+</build>
+
+
+
+    <!--<build>-->
+    <!--<plugins>-->
+    <!--<plugin>-->
+    <!--<groupId>org.springframework.boot</groupId>-->
+    <!--<artifactId>spring-boot-maven-plugin</artifactId>-->
+    <!--</plugin>-->
+    <!--</plugins>-->
+    <!--</build>-->
+
+</project>
