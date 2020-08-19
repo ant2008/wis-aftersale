@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="wx" />
+        <module name="core" />
+        <module name="hwyun" />
+        <module name="commonservice" />
+        <module name="front" />
+        <module name="aftersale" />
+        <module name="aliyun" />
+        <module name="commdomain" />
+        <module name="wiser-rtc" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="aftersale" target="1.8" />
+      <module name="aliyun" target="1.8" />
+      <module name="commdomain" target="1.8" />
+      <module name="commonservice" target="1.8" />
+      <module name="core" target="1.8" />
+      <module name="front" target="1.8" />
+      <module name="hwyun" target="1.8" />
+      <module name="wiser-cloud" target="1.8" />
+      <module name="wiser-rtc" target="1.8" />
+      <module name="wx" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="aftersale" options="-parameters" />
+      <module name="aliyun" options="-parameters" />
+      <module name="commdomain" options="-parameters" />
+      <module name="commonservice" options="-parameters" />
+      <module name="core" options="-parameters" />
+      <module name="front" options="-parameters" />
+      <module name="hwyun" options="-parameters" />
+      <module name="wiser-rtc" options="-parameters" />
+      <module name="wx" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+<!--    <property name="connection.url">jdbc:mysql://39.104.68.204:3306/sitesel_devp</property>-->
+<!--    <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>-->
+
+    <property name="connection.url">jdbc:postgresql://39.104.68.204:5432/wiser_aftersale</property>
+    <property name="connection.driver_class">org.postgresql.Driver</property>
+
+      <mapping class="com.wenc.commdomain.pojo.glt.GlVendor"/>
+      <mapping class="com.wenc.commdomain.pojo.stb.VbPltecorderH"/>
+      <mapping class="com.wenc.commdomain.pojo.glt.GlExpress"/>
+      <mapping class="com.wenc.commdomain.pojo.bil.VbReceiveQuy"/>
+      <mapping class="com.wenc.commdomain.pojo.bil.VbSaleQuy"/>
+      <mapping class="com.wenc.commdomain.pojo.report.TrpShopDepotSale"/>
+      <mapping class="com.wenc.commdomain.pojo.report.VbShopDepotSale"/>
+      <mapping class="com.wenc.commdomain.pojo.report.TrpProductSale"/>
+      <mapping class="com.wenc.commdomain.pojo.report.VbProductDailySale"/>
+      <mapping class="com.wenc.commdomain.pojo.matdata.TsStatReportLog"/>
+      <mapping class="com.wenc.commdomain.pojo.report.VbProductSaleM"/>
+      <mapping class="com.wenc.commdomain.pojo.report.VbShopDepotSaleM"/>
+      <mapping class="com.wenc.commdomain.pojo.report.VbShopSaleM"/>
+      <mapping class="com.wenc.commdomain.pojo.yunxin.TbYunxinToken"/>
+      <mapping class="com.wenc.commdomain.pojo.sys.TsAccountApplication"/>
+      <mapping class="com.wenc.commdomain.pojo.matdata.TbAccountCertify"/>
+      <mapping class="com.wenc.commdomain.pojo.dsb.GlDistribprdApply"/>
+      <mapping class="com.wenc.commdomain.pojo.dsb.TbDistributionProduct"/>
+      <mapping class="com.wenc.commdomain.pojo.dsb.TbSalesmanDistribprd"/>
+      <mapping class="com.wenc.commdomain.pojo.dsb.TbSalesman"/>
+      <mapping class="com.wenc.commdomain.pojo.dsb.VbSalesmanDistribprd"/>
+      <mapping class="com.wenc.commdomain.pojo.dsb.TbSalesmanCustomer"/>
+      <mapping class="com.wenc.commdomain.pojo.dsb.TbSalesmanWriteoffCode"/>
+      <mapping class="com.wenc.commdomain.pojo.dsb.TbWriteoffAccount"/>
+      <mapping class="com.wenc.commdomain.pojo.dsb.TbDistributeOrderD"/>
+      <mapping class="com.wenc.commdomain.pojo.dsb.TbDistributeOrderH"/>
+      <mapping class="com.wenc.commdomain.pojo.dsb.TbSupplyOrderD"/>
+      <mapping class="com.wenc.commdomain.pojo.dsb.TbSupplyOrderH"/>
+      <mapping class="com.wenc.commdomain.vo.dsb.VbDistributeOrderD"/>
+      <mapping class="com.wenc.commdomain.vo.dsb.VbDistributeOrderH"/>
+      <mapping class="com.wenc.commdomain.vo.dsb.VbSupplyOrderD"/>
+      <mapping class="com.wenc.commdomain.vo.dsb.VbSupplyOrderH"/>
+      <mapping class="com.wenc.commdomain.pojo.dsb.TbSalesmanPerformanceAccount"/>
+      <mapping class="com.wenc.commdomain.pojo.dsb.TbSalesmanPerformanceD"/>
+      <mapping class="com.wenc.commdomain.pojo.dsb.TbSalesmanPerformanceH"/>
+      <mapping class="com.wenc.commdomain.pojo.dsb.VbSalesmanePerformance"/>
+      <mapping class="com.wenc.commdomain.pojo.matdata.TbVendor"/>
+
+    <mapping class="com.wenc.commdomain.pojo.stb.TbDistributor"/>
+      <mapping class="com.wenc.commdomain.pojo.matdata.VbAccountCertify"/>
+    <mapping class="com.wenc.commdomain.pojo.dsb.VbGlDistribprdApply"/>
+      <mapping class="com.wenc.commdomain.pojo.dsb.VbValidDistributeProduct"/>
+      <mapping class="com.wenc.commdomain.pojo.matdata.TbProductSchedule"/>
+      <mapping class="com.wenc.commdomain.pojo.matdata.VbProductSchedule"/>
+      <mapping class="com.wenc.commdomain.pojo.bus.TbReservationAccount"/>
+      <mapping class="com.wenc.commdomain.pojo.matdata.TbHwdmsLog"/>
+      <mapping class="com.wenc.commdomain.pojo.dsb.VbDistribWriteoffAccount"/>
+      <mapping class="com.wenc.commdomain.pojo.dsb.VbVendorWriteoffAccount"/>
+      <mapping class="com.wenc.commdomain.pojo.dsb.TbDistributorPerformanceAccount"/>
+      <mapping class="com.wenc.commdomain.pojo.dsb.TbDistributorPerformanceD"/>
+      <mapping class="com.wenc.commdomain.pojo.dsb.TbDistributorPerformanceH"/>
+      <mapping class="com.wenc.commdomain.pojo.dsb.TbSupplyPerformanceAccount"/>
+      <mapping class="com.wenc.commdomain.pojo.dsb.TbSupplyPerformanceD"/>
+      <mapping class="com.wenc.commdomain.pojo.dsb.TbSupplyPerformanceH"/>
+      <mapping class="com.wenc.commdomain.pojo.glt.GlPaymentAccount"/>
+      <mapping class="com.wenc.commdomain.pojo.bus.VbReservationAccount"/>
+    <mapping class="com.wenc.commdomain.pojo.matdata.TbScheduleSite"/>
+      <mapping class="com.wenc.commdomain.pojo.matdata.TbMqRecord"/>
+      <mapping class="com.wenc.commdomain.pojo.glt.GlClass"/>
+    <mapping class="com.wenc.commdomain.pojo.core.SsTenant"/>
+    <mapping class="com.wenc.commdomain.postgresql.pojo.SsCode"/>
+    <mapping class="com.wenc.commdomain.pojo.core.SsBillChk"/>
+    <mapping class="com.wenc.commdomain.pojo.core.SsCode"/>
+    <mapping class="com.wenc.commdomain.pojo.core.SsFuncD"/>
+    <mapping class="com.wenc.commdomain.pojo.core.SsFuncH"/>
+    <mapping class="com.wenc.commdomain.pojo.core.SsRole"/>
+    <mapping class="com.wenc.commdomain.pojo.core.SsRoleFuncD"/>
+    <mapping class="com.wenc.commdomain.pojo.core.SsRoleFuncH"/>
+    <mapping class="com.wenc.commdomain.pojo.core.SsSerialno"/>
+    <mapping class="com.wenc.commdomain.pojo.core.SsTenantRole"/>
+    <mapping class="com.wenc.commdomain.pojo.core.SsUser"/>
+    <mapping class="com.wenc.commdomain.pojo.core.SsUserInvite"/>
+    <mapping class="com.wenc.commdomain.pojo.core.SsUserRole"/>
+    <mapping class="com.wenc.commdomain.pojo.core.VFuncRight"/>
+    <mapping class="com.wenc.commdomain.pojo.core.VRoleFuncd"/>
+    <mapping class="com.wenc.commdomain.pojo.core.VbFuncD"/>
+      <mapping class="com.wenc.commdomain.pojo.matdata.TsArea"/>
+      <mapping class="com.wenc.commdomain.pojo.matdata.TsBand"/>
+      <mapping class="com.wenc.commdomain.pojo.matdata.TsClass"/>
+      <mapping class="com.wenc.commdomain.pojo.matdata.TsDepot"/>
+      <mapping class="com.wenc.commdomain.pojo.matdata.TsExpress"/>
+      <mapping class="com.wenc.commdomain.pojo.matdata.TsExpressMapping"/>
+      <mapping class="com.wenc.commdomain.pojo.matdata.TsExpressTpl"/>
+      <mapping class="com.wenc.commdomain.pojo.matdata.TsOrgcode"/>
+      <mapping class="com.wenc.commdomain.pojo.matdata.TsPos"/>
+      <mapping class="com.wenc.commdomain.pojo.matdata.TsPrint"/>
+      <mapping class="com.wenc.commdomain.pojo.matdata.TsVerifyCode"/>
+      <mapping class="com.wenc.commdomain.pojo.matdata.TbProduct"/>
+      <mapping class="com.wenc.commdomain.pojo.matdata.TbProductDescription"/>
+      <mapping class="com.wenc.commdomain.pojo.matdata.TbProductImage"/>
+      <mapping class="com.wenc.commdomain.pojo.matdata.TbProductPrice"/>
+      <mapping class="com.wenc.commdomain.pojo.matdata.TbVendorItem"/>
+      <mapping class="com.wenc.commdomain.pojo.matdata.TsPriceGroup"/>
+      <mapping class="com.wenc.commdomain.pojo.core.VbSysUser"/>
+      <mapping class="com.wenc.commdomain.pojo.aftersale.TbAftersaleAccount"/>
+      <mapping class="com.wenc.commdomain.pojo.aftersale.TbAftersaleCustomer"/>
+      <mapping class="com.wenc.commdomain.pojo.aftersale.TbAftersaleCustomerAddress"/>
+      <mapping class="com.wenc.commdomain.pojo.aftersale.TbAftersaleOrderD"/>
+      <mapping class="com.wenc.commdomain.pojo.aftersale.TbAftersaleOrderH"/>
+      <mapping class="com.wenc.commdomain.pojo.matdata.TbProductComment"/>
+      <mapping class="com.wenc.commdomain.pojo.matdata.TbProductCommentReply"/>
+      <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>

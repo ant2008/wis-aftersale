@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/aftersale/aftersale.iml" filepath="$PROJECT_DIR$/aftersale/aftersale.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aliyun/aliyun.iml" filepath="$PROJECT_DIR$/aliyun/aliyun.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commdomain/commdomain.iml" filepath="$PROJECT_DIR$/commdomain/commdomain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commonservice/commonservice.iml" filepath="$PROJECT_DIR$/commonservice/commonservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/front/front.iml" filepath="$PROJECT_DIR$/front/front.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hwyun/hwyun.iml" filepath="$PROJECT_DIR$/hwyun/hwyun.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wiser-cloud.iml" filepath="$PROJECT_DIR$/wiser-cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rtc/wiser-rtc.iml" filepath="$PROJECT_DIR$/rtc/wiser-rtc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wx/wx.iml" filepath="$PROJECT_DIR$/wx/wx.iml" />
+    </modules>
+  </component>
+</project>
