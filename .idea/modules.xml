@@ -9,7 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
       <module fileurl="file://$PROJECT_DIR$/front/front.iml" filepath="$PROJECT_DIR$/front/front.iml" />
       <module fileurl="file://$PROJECT_DIR$/hwyun/hwyun.iml" filepath="$PROJECT_DIR$/hwyun/hwyun.iml" />
-      <module fileurl="file://$PROJECT_DIR$/wiser-cloud.iml" filepath="$PROJECT_DIR$/wiser-cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wis-aftersale.iml" filepath="$PROJECT_DIR$/wis-aftersale.iml" />
       <module fileurl="file://$PROJECT_DIR$/rtc/wiser-rtc.iml" filepath="$PROJECT_DIR$/rtc/wiser-rtc.iml" />
       <module fileurl="file://$PROJECT_DIR$/wx/wx.iml" filepath="$PROJECT_DIR$/wx/wx.iml" />
     </modules>
