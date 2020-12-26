@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>wiser-cloud</artifactId>
+        <groupId>com.wiser</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>hwyun</artifactId>
+
+
+    <properties>
+        <io.netty-version>4.1.5.Final</io.netty-version>
+
+    </properties>
+
+    <dependencies>
+        <!--	 huawei dms resful api core -->
+        <dependency>
+            <groupId>java-sdk-core</groupId>
+            <artifactId>java-sdk-core</artifactId>
+            <version>2.0.1</version>
+            <type>jar</type>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/lib/java-sdk-core-2.0.1.jar</systemPath>
+        </dependency>
+
+
+<!--        huawei dms tcp core-->
+        <dependency>
+            <groupId>com.huawei.middleware.dms</groupId>
+            <artifactId>dms.protocol</artifactId>
+            <version>1.0.0</version>
+            <type>jar</type>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/lib/dms.protocol-1.0.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.huawei.middleware.dms</groupId>
+            <artifactId>dms.sdk</artifactId>
+            <version>1.0.0</version>
+            <type>jar</type>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/lib/dms.sdk-1.0.0.jar</systemPath>
+        </dependency>
+
+<!--暂时不需要那么多的类库-->
+
+<!--&lt;!&ndash;        共用模式&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>io.vertx</groupId>-->
+<!--            <artifactId>vertx-core</artifactId>-->
+<!--            <version>3.3.3</version>-->
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <artifactId>jackson-databind</artifactId>-->
+<!--                    <groupId>com.fasterxml.jackson.core</groupId>-->
+<!--                </exclusion>-->
+<!--                <exclusion>-->
+<!--                    <artifactId>jackson-core</artifactId>-->
+<!--                    <groupId>com.fasterxml.jackson.core</groupId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
+<!--            <type>jar</type>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${pom.basedir}/lib/vertx-core-3.3.3.jar</systemPath>-->
+<!--        </dependency>-->
+
+
+
+<!--                <dependency>-->
+<!--                    <groupId>log4j</groupId>-->
+<!--                    <artifactId>log4j</artifactId>-->
+<!--                    <version>1.2.17</version>-->
+<!--                </dependency>-->
+
+
+<!--                <dependency>-->
+<!--                    <groupId>org.slf4j</groupId>-->
+<!--                    <artifactId>slf4j-log4j12</artifactId>-->
+<!--                    <version>1.7.7</version>-->
+<!--                </dependency>-->
+
+
+
+
+<!--        <dependency>-->
+<!--            <groupId>io.netty</groupId>-->
+<!--            <artifactId>netty-tcnative-boringssl-static</artifactId>-->
+<!--            <version>1.1.33.Fork26</version>-->
+<!--            <type>jar</type>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${pom.basedir}/lib/netty-tcnative-boringssl-static-1.1.33.Fork26.jar</systemPath>-->
+<!--        </dependency>-->
+
+
+<!--        <dependency>-->
+<!--            <groupId>io.netty</groupId>-->
+<!--            <artifactId>netty-common</artifactId>-->
+<!--            <version>4.1.5</version>-->
+<!--            <type>jar</type>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${pom.basedir}/lib/netty-common-4.1.5.Final.jar</systemPath>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>io.netty</groupId>-->
+<!--            <artifactId>netty-buffer</artifactId>-->
+<!--            <version>4.1.5</version>-->
+<!--            <type>jar</type>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${pom.basedir}/lib/netty-buffer-4.1.5.Final.jar</systemPath>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>io.netty</groupId>-->
+<!--            <artifactId>netty-transport</artifactId>-->
+<!--            <version>4.1.5</version>-->
+<!--            <type>jar</type>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${pom.basedir}/lib/netty-transport-4.1.5.Final.jar</systemPath>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>io.netty</groupId>-->
+<!--            <artifactId>netty-handler</artifactId>-->
+<!--            <version>4.1.5</version>-->
+<!--            <type>jar</type>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${pom.basedir}/lib/netty-handler-4.1.5.Final.jar</systemPath>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>io.netty</groupId>-->
+<!--            <artifactId>netty-handler-proxy</artifactId>-->
+<!--            <version>4.1.5</version>-->
+<!--            <type>jar</type>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${pom.basedir}/lib/netty-handler-proxy-4.1.5.Final.jar</systemPath>-->
+<!--        </dependency>-->
+
+<!--        <dependency>-->
+<!--            <groupId>io.netty</groupId>-->
+<!--            <artifactId>netty-codec</artifactId>-->
+<!--            <version>4.1.5</version>-->
+<!--            <type>jar</type>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${pom.basedir}/lib/netty-codec-4.1.5.Final.jar</systemPath>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>io.netty</groupId>-->
+<!--            <artifactId>netty-codec-dns</artifactId>-->
+<!--            <version>4.1.5</version>-->
+<!--            <type>jar</type>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${pom.basedir}/lib/netty-codec-dns-4.1.5.Final.jar</systemPath>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>io.netty</groupId>-->
+<!--            <artifactId>netty-codec-http</artifactId>-->
+<!--            <version>4.1.5</version>-->
+<!--            <type>jar</type>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${pom.basedir}/lib/netty-codec-http-4.1.5.Final.jar</systemPath>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>io.netty</groupId>-->
+<!--            <artifactId>netty-codec-http2</artifactId>-->
+<!--            <version>4.1.5</version>-->
+<!--            <type>jar</type>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${pom.basedir}/lib/netty-codec-http2-4.1.5.Final.jar</systemPath>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>io.netty</groupId>-->
+<!--            <artifactId>netty-codec-socks</artifactId>-->
+<!--            <version>4.1.5</version>-->
+<!--            <type>jar</type>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${pom.basedir}/lib/netty-codec-socks-4.1.5.Final.jar</systemPath>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>io.netty</groupId>-->
+<!--            <artifactId>netty-resolver</artifactId>-->
+<!--            <version>4.1.5</version>-->
+<!--            <type>jar</type>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${pom.basedir}/lib/netty-resolver-4.1.5.Final.jar</systemPath>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>io.netty</groupId>-->
+<!--            <artifactId>netty-resolver-dns</artifactId>-->
+<!--            <version>4.1.5</version>-->
+<!--            <type>jar</type>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${pom.basedir}/lib/netty-resolver-dns-4.1.5.Final.jar</systemPath>-->
+<!--        </dependency>-->
+
+
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.7</version>
+            <type>jar</type>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/lib/joda-time-2.7.jar</systemPath>
+        </dependency>
+
+
+    </dependencies>
+
+
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--                <configuration>-->
+<!--                    <executable>true</executable>-->
+<!--                    <includeSystemScope>true</includeSystemScope>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
+
+
+</project>
