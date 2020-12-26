@@ -1,3 +1,3 @@
-# wiser_core
+# what is wis-aftersale
 
-Wiser Platform Core 
+The project is a small and simple after-sales service project, providing basic document distribution, salesperson confirmation, message notification and management api.
