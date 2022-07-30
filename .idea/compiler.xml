@@ -40,6 +40,7 @@
       <module name="core" options="-parameters" />
       <module name="front" options="-parameters" />
       <module name="hwyun" options="-parameters" />
+      <module name="wis-aftersale" options="-parameters" />
       <module name="wiser-rtc" options="-parameters" />
       <module name="wx" options="-parameters" />
     </option>
